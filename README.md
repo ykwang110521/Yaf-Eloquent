@@ -15,20 +15,24 @@ yaf.use_spl_autoload=1 ;开启自动加载
 ```sh
 {
     "require": {
-        "php": ">=5.5.9",
-        "illuminate/database": "5.1.*",
-        "illuminate/events": "5.1.*",
+        "php": ">=5.6.4",
+        "illuminate/database": "5.4.*",
+        "illuminate/events": "5.4.*",
+        "illuminate/pagination": "5.4.*",
+        "illuminate/contracts": "5.4.*",
+        "illuminate/support": "5.4.*",
+        "nesbot/carbon":"1.22.1",
         "symfony/debug": "2.6.*",
         "symfony/var-dumper": "2.6.*"
     },
 
     "autoload": {
         "psr-4": {
-            "App\\Models\\": "application/models"
+            "App\\Models\\": "application/models",
+            "Illuminate\\Pagination\\": ""
         }
     }
 }
-
 
 ```
 然后记得
@@ -82,3 +86,4 @@ public function _initDefaultDbAdapter()
 
 # demo
 http://yourhost/yaf-eloquent/public/index/test
+http://yourhost/yaf-eloquent/public/partner?page=2
