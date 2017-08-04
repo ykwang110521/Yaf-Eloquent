@@ -1,7 +1,7 @@
 # yaf-eloquent
 >[yaf](https://github.com/laruence/yaf)是鸟哥用C语言编写的一个PHP框架，yaf文档地址：[http://yaf.laruence.com/manual/](http://yaf.laruence.com/manual/)
 # 配置
-首先，你得安装yaf,文档里有，[http://php.net/manual/zh/yaf.installation.php](http://php.net/manual/zh/yaf.installation.php) 。
+安装yaf,文档里有，[http://php.net/manual/zh/yaf.installation.php](http://php.net/manual/zh/yaf.installation.php) 。
 安装完之后，编辑php.ini文件，配置yaf:
 ```sh
 extension=yaf.so
@@ -63,13 +63,12 @@ public function _initConfig()
 # Eloquent ORM
 > [Eloquent ORM](https://github.com/illuminate/database)是Laravel框架里的ORM。
 
-yaf里是没有数据库操作类的，可以自己写一个DAO层，或者直接使用第三方包，推荐[Medoo](https://github.com/catfan/Medoo)和[Eloquent ORM](https://github.com/illuminate/database),chen-yaf里面是使用的[Eloquent ORM](https://github.com/illuminate/database)。
+yaf里是没有数据库操作类的，直接使用第三方包，[Eloquent ORM](https://github.com/illuminate/database)。
 编辑Bootstrap.php文件，添加_initDefaultDbAdapter方法
 ```php
 /**
  * 初始化数据库分发器
  * @function _initDefaultDbAdapter
- * @author   jsyzchenchen@gmail.com
  */
 public function _initDefaultDbAdapter()
 {

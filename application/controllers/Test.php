@@ -7,6 +7,8 @@ class TestController extends \Yaf\Controller_Abstract {
     }
 
     public function testAction() {
+        //$str= randomStr(10);
+        //var_dump($str);die;
         $res = DB::table('t_partner')->where('cate_id',1)->limit(2)->get();
         var_dump($res);die;
     }

@@ -100,7 +100,6 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
 	/**
 	 * 初始化数据库分发器
 	 * @function _initDefaultDbAdapter
-	 * @author   jsyzchenchen@gmail.com
 	 */
 	public function _initDefaultDbAdapter()
 	{
@@ -121,6 +120,6 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
 	 */
 	public function _initFunction()
 	{
-		\Yaf\Loader::import('Common/functions.php');
+		\Yaf\Loader::import('Common/common.php');
 	}
 }
